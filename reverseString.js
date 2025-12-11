@@ -1,9 +1,10 @@
 export function reverseString(str) {
-    if (str === "abc") {
-        return "cba";
-    } else if (str === "123"){
-        return "321";
-    } else if (str === "!@#"){
-        return "#@!"
+    const lastIndex = str.length - 1;
+    let reversedStr = '';
+
+    for (let i = lastIndex; i >= 0; i--) {
+        reversedStr += str[i];
     }
+
+    return reversedStr;
 }
